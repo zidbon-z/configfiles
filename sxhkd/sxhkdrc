@@ -51,7 +51,7 @@ super + F8
 
 #Terminal e-mail
 super + F9
-    kitty -e 'neomutt'
+    kitty -o background_image=~/Pictures/mail_envelope.png -o background_tint=0.5 -e 'neomutt'
 
 #Newsboat
 super + F10
@@ -214,9 +214,9 @@ super + q
 # SUPER KEYS
 #################################################################
 
-#Focus selected desktop
+#Focus next active desktop
 super + Tab
-	bspc desktop -f '^{1-9,10}'
+  bspc desktop -f next.occupied
 
 # Increase/decrease window gap on focused desktop
 super + bracket{left,right}
