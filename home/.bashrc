@@ -14,6 +14,7 @@
 
 export HISTCONTROL=ignoreboth:erasedups
 
+
 PS1='[\u@\h \W]\$ '
 
 if [ -d "$HOME/.bin" ] ;

@@ -64,7 +64,7 @@ super + F11
 #Irssi
 super + F12
 #kitty -e 'irssi'
-    kitty -o background_image=~/Pictures/Backgrounds/anime/1307022.png -o background_tint=0.7 -e 'irssi'
+    kitty -o background_image=~/Pictures/Backgrounds/anime/anime_0109.png -o background_tint=0.7 -e 'irssi'
 
 #################################################################
 # Terminals
@@ -83,20 +83,20 @@ super + x
 
 #Kitty Black Background
 super + i ; u
-  kitty -o background_image=none
+  kitty -o background_image=~/Pictures/Backgrounds/anime/anime_0109.png -o background_tint=0.7
 
 #Kitty Alternate Background Image
 super + i ; i
-  kitty -o background_image=~/Pictures/Backgrounds/anime/1307022.png -o background_tint=0.7
+  kitty -o background_image=~/Pictures/Backgrounds/anime/anime_0042.png -o background_tint=0.7
 
 #Kitty Alternate Background Image
 super + i ; o
-  kitty -o background_image=~/Pictures/Backgrounds/anime/0icGBWS.png -o background_tint=0.5
+  kitty -o background_image=~/Pictures/Backgrounds/anime/anime_0002.png -o background_tint=0.5
 
 
 #Kitty Alternate Background Image
 super + i ; p
-  kitty -o background_image=~/Pictures/Backgrounds/anime/1wIXARH.png -o background_tint=0.7
+  kitty -o background_image=~/Pictures/Backgrounds/anime/anime_0048.png -o background_tint=0.7
 
 #################################################################
 
