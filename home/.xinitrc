@@ -60,6 +60,7 @@ xset s noblank &
 xsetroot -cursor_name left_ptr &
 nitrogen --restore &
 picom &
+udiskie & 
 export QT_QPA_PLATFORMTHEME=qt5ct
 xmodmap -e 'clear lock'
 exec bspwm

@@ -229,6 +229,7 @@ alias x=exit
 alias r=ranger
 alias nb=newsboat
 alias ca=calcurse
+alias bm=bashmount
 
 export EDITOR=nvim
 export VISUAL=nvim

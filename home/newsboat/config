@@ -1,5 +1,5 @@
 # general settings
-auto-reload yes
+auto-reload no
 max-items 0
 
 # externel browser
