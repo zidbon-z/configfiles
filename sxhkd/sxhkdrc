@@ -51,7 +51,7 @@ super + F8
 
 #Terminal e-mail
 super + F9
-    kitty -o background_image=~/Pictures/mail_envelope.png -o background_tint=0.5 -e 'neomutt'
+    kitty -o background_image=~/Pictures/mail_envelope_purple.png -o background_tint=0.5 -e 'neomutt'
 
 #Newsboat
 super + F10
