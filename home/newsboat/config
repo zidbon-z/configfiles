@@ -1,6 +1,6 @@
 # general settings
 auto-reload no
-max-items 0
+max-items 50
 
 # externel browser
 #browser "/usr/local/bin/lynx %u"
