@@ -75,4 +75,8 @@ name = 'edit'
     repo = "vimwiki/vimwiki"
     merged = false
 
+# Custom Plugins
+[[custom_plugins]]
+    repo = "alvan/vim-closetag"
+    merged = false
 ##############################################

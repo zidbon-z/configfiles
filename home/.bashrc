@@ -230,6 +230,7 @@ alias r=ranger
 alias nb=newsboat
 alias ca=calcurse
 alias bm=bashmount
+alias zoe="nvim /home/zidbon/Documents/zoe/zoe.wiki"
 
 export EDITOR=nvim
 export VISUAL=nvim
