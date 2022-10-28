@@ -64,6 +64,19 @@ then
       ln -s $HOME/.config/configfiles/bspwm $HOME/.config/bspwm
     fi
   fi
+ 
+  # Symlink sxhkd
+  if [ -d "$HOME/.config/configfiles/sxhkd" ]
+  then
+    if [ -d "$HOME/.config/sxhkd" ]
+    then
+      rm -rf "$HOME/.config/sxhkd"
+      ln -s $HOME/.config/configfiles/sxhkd $HOME/.config/sxhkd
+    else
+      ln -s $HOME/.config/configfiles/sxhkd $HOME/.config/sxhkd
+    fi
+  fi
+
 
 
 
