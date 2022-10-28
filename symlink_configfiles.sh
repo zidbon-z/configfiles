@@ -44,12 +44,12 @@ then
   # Symlink newsboat
   if [ -d "$HOME/.config/configfiles/home/newsboat" ]
   then
-    if [ -d "$HOME/newsboat" ]
+    if [ -d "$HOME/.newsboat" ]
     then
-      rm -rf "$HOME/newsboat"
-      ln -s $HOME/.config/configfiles/home/newsboat $HOME/newsboat
+      rm -rf "$HOME/.newsboat"
+      ln -s $HOME/.config/configfiles/home/newsboat $HOME/.newsboat
     else
-      ln -s $HOME/.config/configfiles/home/newsboat $HOME/newsboat
+      ln -s $HOME/.config/configfiles/home/newsboat $HOME/.newsboat
     fi
   fi
  
