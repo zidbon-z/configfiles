@@ -76,6 +76,32 @@ then
       ln -s $HOME/.config/configfiles/sxhkd $HOME/.config/sxhkd
     fi
   fi
+ 
+  # Symlink picom
+  if [ -d "$HOME/.config/configfiles/picom" ]
+  then
+    if [ -d "$HOME/.config/picom" ]
+    then
+      rm -rf "$HOME/.config/picom"
+      ln -s $HOME/.config/configfiles/picom $HOME/.config/picom
+    else
+      ln -s $HOME/.config/configfiles/picom $HOME/.config/picom
+    fi
+  fi
+ 
+  # Symlink ranger
+  if [ -d "$HOME/.config/configfiles/ranger" ]
+  then
+    if [ -d "$HOME/.config/ranger" ]
+    then
+      rm -rf "$HOME/.config/ranger"
+      ln -s $HOME/.config/configfiles/ranger $HOME/.config/ranger
+    else
+      ln -s $HOME/.config/configfiles/ranger $HOME/.config/ranger
+    fi
+  fi
+
+
 
 
 
@@ -83,8 +109,8 @@ then
 
 
 else
-  cd $HOME/.config
-  git clone "https://github.com/zidbon-z/configfiles"
+  #cd $HOME/.config
+  git clone "https://github.com/zidbon-z/configfiles" $HOME/.config/
   wait
   bash $HOME/.config/configfiles/symlink_dotfiles.sh
   
