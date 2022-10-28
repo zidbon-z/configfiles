@@ -100,6 +100,32 @@ then
       ln -s $HOME/.config/configfiles/ranger $HOME/.config/ranger
     fi
   fi
+ 
+  # Symlink kitty
+  if [ -d "$HOME/.config/configfiles/kitty" ]
+  then
+    if [ -d "$HOME/.config/kitty" ]
+    then
+      rm -rf "$HOME/.config/kitty"
+      ln -s $HOME/.config/configfiles/kitty $HOME/.config/kitty
+    else
+      ln -s $HOME/.config/configfiles/kitty $HOME/.config/kitty
+    fi
+  fi
+ 
+  # Symlink bpytop
+  if [ -d "$HOME/.config/configfiles/bpytop" ]
+  then
+    if [ -d "$HOME/.config/bpytop" ]
+    then
+      rm -rf "$HOME/.config/bpytop"
+      ln -s $HOME/.config/configfiles/bpytop $HOME/.config/bpytop
+    else
+      ln -s $HOME/.config/configfiles/bpytop $HOME/.config/bpytop
+    fi
+  fi
+
+
 
 
 
