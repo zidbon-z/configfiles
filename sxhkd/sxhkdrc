@@ -105,6 +105,74 @@ super + Escape
     xkill
 
 #################################################################
+# Wallpapers
+#################################################################
+
+#################################################################
+# Scenery
+
+super + w ; q ; q
+  nitrogen --set-scaled ~/Pictures/Backgrounds/distrotube/0001.jpg
+
+super + w ; q ; w
+  nitrogen --set-scaled ~/Pictures/Backgrounds/distrotube/0008.jpg
+
+super + w ; q ; e
+  nitrogen --set-scaled ~/Pictures/Backgrounds/distrotube/0042.jpg
+
+super + w ; q ; a
+  nitrogen --set-scaled ~/Pictures/Backgrounds/distrotube/0055.jpg
+
+super + w ; q ; s
+  nitrogen --set-scaled ~/Pictures/Backgrounds/distrotube/0057.jpg
+
+super + w ; q ; d
+  nitrogen --set-scaled ~/Pictures/Backgrounds/distrotube/0061.jpg
+
+super + w ; q ; z
+  nitrogen --set-scaled ~/Pictures/Backgrounds/distrotube/0062.jpg
+
+super + w ; q ; x
+  nitrogen --set-scaled ~/Pictures/Backgrounds/distrotube/0065.jpg
+
+super + w ; q ; c
+  nitrogen --set-scaled ~/Pictures/Backgrounds/distrotube/0074.jpg
+
+#################################################################
+# Space
+
+super + w ; w ; q
+  nitrogen --set-scaled ~/Pictures/Backgrounds/fantasy/331908-1920x1200-Science-Fiction_pandora1920x1200.jpg
+
+super + w ; w ; w
+  nitrogen --set-scaled ~/Pictures/Backgrounds/generic/black.png
+
+super + w ; w ; e
+  nitrogen --set-scaled ~/Pictures/Backgrounds/logicyugi/david-edwards-sphere-001.jpg
+
+super + w ; w ; a
+  nitrogen --set-scaled ~/Pictures/Backgrounds/logicyugi/dmitriy-kuzin-desert.jpg
+
+super + w ; w ; s
+  nitrogen --set-scaled ~/Pictures/Backgrounds/logicyugi/galactic-dragon.jpg
+
+super + w ; w ; d
+  nitrogen --set-scaled ~/Pictures/Backgrounds/logicyugi/iPPMrLB.jpg
+
+super + w ; w ; z
+  nitrogen --set-scaled ~/Pictures/Backgrounds/space/1920779-1920x1080-Space-Dock.jpg
+
+super + w ; w ; x
+  nitrogen --set-scaled ~/Pictures/Backgrounds/space/283678-1920x1080-[DesktopNexus.com].jpg
+
+super + w ; w ; c
+  nitrogen --set-scaled ~/Pictures/Backgrounds/space/nasa-89127.jpg
+
+#################################################################
+
+
+
+#################################################################
 # Applications
 #################################################################
 
