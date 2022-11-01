@@ -1,7 +1,7 @@
 This a guide to configure your system for bspwm after a basic arch installation.
 
 # First install some programs
-sudo pacman -S xorg xorg-xinit bspwm sxhkd nitrogen kitty xterm alsa-utils udiskie thunar git dmenu ntfs-3g pulseaudio-alsa lxappearance qt5ct breeze-gtk deepin-gtk-theme picom unclutter ncdu firefox os-prober openssh nvidia-settings virtualbox newsboat vlc mpv youtube-dl calcurse w3m python-pillow irssi
+sudo pacman -S xorg xorg-xinit bspwm sxhkd nitrogen kitty xterm alsa-utils udiskie thunar git dmenu ntfs-3g pulseaudio-alsa lxappearance qt5ct breeze-gtk deepin-gtk-theme picom unclutter ncdu firefox os-prober openssh nvidia-settings virtualbox newsboat vlc mpv youtube-dl calcurse w3m python-pillow irssi figlet bpytop 
 
 # Next clone config files
 cd ~/.config
