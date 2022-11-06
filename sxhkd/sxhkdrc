@@ -75,6 +75,10 @@ super + F12
 super + Return
     kitty
 
+#Kitty with opacity
+super + slash
+    kitty -c $HOME/.config/kitty/kitty2.conf
+
 #Xterm
 super + x
     xterm
@@ -169,7 +173,12 @@ super + w ; w ; c
   nitrogen --set-scaled ~/Pictures/Backgrounds/space/nasa-89127.jpg
 
 #################################################################
+#Test multiple actions
+super + t
+  ./desktop_theme.sh
 
+  #firefox &&
+  #kitty -e 'ranger'
 
 
 #################################################################
@@ -188,7 +197,14 @@ super + n
 super + d
     dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
+
 #################################################################
+# Screenshot
+#################################################################
+
+# Flameshot
+super + semicolon
+    flameshot gui --path $HOME/Pictures/screenshots/
 
 
 

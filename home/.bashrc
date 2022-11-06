@@ -231,6 +231,7 @@ alias nb=newsboat
 alias ca=calcurse
 alias bm=bashmount
 alias zoe="nvim /home/zidbon/Documents/zoe/zoe.wiki"
+alias wtr="curl wttr.in"
 
 export EDITOR=nvim
 export VISUAL=nvim
