@@ -48,6 +48,10 @@ name = 'debug'
 # Edit Layer  
 [[layers]]
 name = 'edit'
+
+# Default Layer (for copy and paste)
+[[layers]]
+name = "default"
 #############################################
 
 # Custom Plugins
