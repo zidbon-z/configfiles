@@ -174,8 +174,9 @@ super + w ; w ; c
 
 #################################################################
 #Test multiple actions
-super + t
-  ./desktop_theme.sh
+super + t ; q
+  ~/.config/configfiles/theme_scripts/theme1.sh
+  #./desktop_theme.sh
 
   #firefox &&
   #kitty -e 'ranger'
