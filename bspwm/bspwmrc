@@ -47,18 +47,20 @@ bspc config merge_overlapping_monitors true
 ##bspc config urgent_border_color 	"#dd2727"
 
 #BSPWM coloring custom
-bspc config normal_border_color         "#1e1e1e"
-bspc config active_border_color         "#1e1e1e"
-bspc config focused_border_color        "#5e81ac"
-bspc config presel_feedback_color       "#5e81ac"
-bspc config urgent_border_color        "#dd2727"
-
-#BSPWM wal custom
-#bspc config normal_border_color         "$color2"
-#bspc config active_border_color         "$color8"
-#bspc config focused_border_color        "$color6"
-#bspc config presel_feedback_color       "$color2"
+#bspc config normal_border_color         "#1e1e1e"
+#bspc config active_border_color         "#1e1e1e"
+#bspc config focused_border_color        "#5e81ac"
+#bspc config presel_feedback_color       "#5e81ac"
 #bspc config urgent_border_color        "#dd2727"
+
+
+. "${HOME}/.config/bspwm/themes/theme"
+#BSPWM theme custom
+bspc config normal_border_color         "$color1"
+bspc config active_border_color         "$color1"
+bspc config focused_border_color        "$color2"
+bspc config presel_feedback_color       "$color2"
+bspc config urgent_border_color        "#dd2727"
 
 
 

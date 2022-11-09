@@ -15,7 +15,15 @@
 export HISTCONTROL=ignoreboth:erasedups
 
 
-PS1='[\u@\h \W]\$ '
+# Bash Prompts
+
+#Original Bash Prompt
+#PS1='[\u@\h \W]\$ '
+
+# Prompt from www.learnlinux.tv
+source $HOME/.bash_prompt
+
+
 
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
