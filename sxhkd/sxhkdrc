@@ -175,7 +175,7 @@ super + w ; w ; c
 #################################################################
 #Test multiple actions
 super + t ; q
-  ~/.config/configfiles/theme_scripts/theme1.sh
+  ~/.config/configfiles/theme_scripts/theme1/theme1.sh
   #./desktop_theme.sh
 
   #firefox &&
