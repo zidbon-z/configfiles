@@ -54,7 +54,7 @@ bspc config merge_overlapping_monitors true
 #bspc config urgent_border_color        "#dd2727"
 
 
-. "${HOME}/.config/bspwm/theme"
+. "${HOME}/.config/bspwm/themes/theme"
 #BSPWM theme custom
 bspc config normal_border_color         "$color1"
 bspc config active_border_color         "$color1"

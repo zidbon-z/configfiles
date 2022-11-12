@@ -173,10 +173,15 @@ super + w ; w ; c
   nitrogen --set-scaled ~/Pictures/Backgrounds/space/nasa-89127.jpg
 
 #################################################################
-#Test multiple actions
+# Themes
+
 super + t ; q
   ~/.config/configfiles/theme_scripts/theme1/theme1.sh
-  #./desktop_theme.sh
+
+super + t ; w
+  ~/.config/configfiles/theme_scripts/theme2/theme2.sh
+
+#################################################################
 
   #firefox &&
   #kitty -e 'ranger'
