@@ -240,6 +240,7 @@ alias ca=calcurse
 alias bm=bashmount
 alias zoe="nvim /home/zidbon/Documents/zoe/zoe.wiki"
 alias wtr="curl wttr.in"
+alias bp=bpytop
 
 export EDITOR=nvim
 export VISUAL=nvim
