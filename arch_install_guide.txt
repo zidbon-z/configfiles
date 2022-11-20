@@ -63,6 +63,52 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
+# Install yay applications
+yay -S
+tdrop-git
+
+##################################################################################################
+# Install spotify
+##################################################################################################
+
+So you have just to edit the PKGBUILD or download here https://www.swisstransfer.com/d/ec410e80-9ba3-4e6a-a7d3-543bad428948
+
+Change commit number, line 9
+
+before edit :
+
+_commit=gc5f8b819
+
+after edit :
+
+_commit=gc5f8b819-2
+
+And change the third shasum512, line 36
+
+before
+
+3cc25f28ae791ac26607117a5df668f803ed8e58f0ace085010a6242fdde97766bdc1c752560850795c9b4324f3e019937fe9af2788a1946ebb70ee781f50d99
+
+after
+
+9ba6c2d155f683b9a38222d58a2a53a2a5f4b422ed1c0d603af87919ba8a68309aea3354278fd1d5d8142a1568d93b7e83b14c041e749b0c39f3bc155a633ef8
+
+Example with yay :
+
+yay -G spotify (download PKGBUILD file)
+
+cd spotify (open spotify install folder)
+
+vim PKGBUILD (edit the PKGBUILD file with previous changes if not downloaded)
+
+makepkg -si (make package and install spotify)
+
+cd .. (back to the previous folder)
+
+rm -fr spotify (remove spotify install folder because you do not need it anymore)
+
+##################################################################################################
+
 # Spacevim
 curl -sLf https://spacevim.org/install.sh | bash
 

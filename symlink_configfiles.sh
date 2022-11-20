@@ -125,6 +125,18 @@ then
     fi
   fi
 
+  # Symlink spacevim
+  if [ -d "$HOME/.config/configfiles/.SpaceVim.d" ]
+  then
+    if [ -d "$HOME/.SpaceVim.d" ]
+    then
+      rm -rf "$HOME/.SpaceVim.d"
+      ln -s $HOME/.config/configfiles/.SpaceVim.d $HOME/.SpaceVim.d
+    else
+      ln -s $HOME/.config/configfiles/.SpaceVim.d $HOME/.SpaceVim.d
+    fi
+  fi
+ 
 
 
 

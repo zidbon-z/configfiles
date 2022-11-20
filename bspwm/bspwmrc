@@ -6,6 +6,7 @@
 #|_.__/|___/ .__/ \_/\_/ |_| |_| |_|_|  \___|
 #          |_|                               
 #
+#
 #LAUNCHERS
 pgrep -x sxhkd > /dev/null || sxhkd &
 #$HOME/.config/bspwm/autostart.sh

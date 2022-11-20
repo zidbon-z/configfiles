@@ -14,7 +14,7 @@
 
 export HISTCONTROL=ignoreboth:erasedups
 
-
+#####################################################
 # Bash Prompts
 
 #Original Bash Prompt
@@ -23,6 +23,12 @@ export HISTCONTROL=ignoreboth:erasedups
 # Prompt from www.learnlinux.tv
 source $HOME/.bash_prompt
 
+# Prompt with git info
+#source ~/.bash/git-prompt.sh
+#PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+#export GIT_PS1_SHOWCOLORHINTS=true 
+
+#####################################################
 
 
 if [ -d "$HOME/.bin" ] ;
