@@ -66,6 +66,7 @@ makepkg -si
 # Install yay applications
 yay -S
 tdrop-git
+picom-git
 
 ##################################################################################################
 # Install spotify
