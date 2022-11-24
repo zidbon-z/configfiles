@@ -7,7 +7,8 @@ cat $HOME/.config/configfiles/theme_scripts/theme1/bspwm_theme1 > $HOME/.config/
 nitrogen --set-scaled ~/.config/configfiles/theme_scripts/theme1/img.jpg --save
 
 # change kitty
-cat $HOME/.config/configfiles/theme_scripts/theme1/kitty_theme1 > $HOME/.config/kitty/kitty.conf
+#cat $HOME/.config/configfiles/theme_scripts/theme1/kitty_theme1 > $HOME/.config/kitty/kitty.conf
+kitty +kitten themes --reload-in=all Kitty Theme1
 
 # change bash_prompt
   cat  $HOME/.config/configfiles/theme_scripts/theme1/bash_prompt_theme1 > $HOME/.bash_prompt
@@ -20,3 +21,4 @@ sed -i 's/colorscheme =.*/colorscheme = "elflord"/' $HOME/.SpaceVim.d/init.toml
 
 # reload bspwm
 ~/.config/bspwm/bspwmrc
+

@@ -137,6 +137,18 @@ then
     fi
   fi
  
+  # Symlink polybar
+  if [ -d "$HOME/.config/configfiles/polybar" ]
+  then
+    if [ -d "$HOME/.config/polybar" ]
+    then
+      rm -rf "$HOME/.config/polybar"
+      ln -s $HOME/.config/configfiles/polybar $HOME/.config/polybar
+    else
+      ln -s $HOME/.config/configfiles/polybar $HOME/.config/polybar
+    fi
+  fi
+ 
 
 
 

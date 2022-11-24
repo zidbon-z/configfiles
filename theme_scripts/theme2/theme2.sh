@@ -5,7 +5,8 @@ cat $HOME/.config/configfiles/theme_scripts/theme2/bspwm_theme2 > $HOME/.config/
 # change nitrogen
 nitrogen --set-scaled ~/.config/configfiles/theme_scripts/theme2/img.jpg --save
 # change kitty
-cat $HOME/.config/configfiles/theme_scripts/theme2/kitty_theme2 > $HOME/.config/kitty/kitty.conf
+#cat $HOME/.config/configfiles/theme_scripts/theme2/kitty_theme2 > $HOME/.config/kitty/kitty.conf
+kitty +kitten themes --reload-in=all Kitty Theme2
 
 # change bash_prompt
   cat  $HOME/.config/configfiles/theme_scripts/theme2/bash_prompt_theme2 > $HOME/.bash_prompt                      
