@@ -19,6 +19,9 @@ cat ~/.config/configfiles/theme_scripts/theme1/rofi_theme1 > ~/.config/rofi/conf
 # change spacevim
 sed -i 's/colorscheme =.*/colorscheme = "elflord"/' $HOME/.SpaceVim.d/init.toml
 
+# change polybar
+cat $HOME/.config/configfiles/theme_scripts/theme1/polybar_theme1 > $HOME/.config/polybar/config.ini
+
 # reload bspwm
 ~/.config/bspwm/bspwmrc
 

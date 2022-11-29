@@ -17,13 +17,15 @@
 ;==========================================================
 
 [colors]
-background = #510275
+background = #00000000
 background-alt = #373B41
-foreground = #C5C8C6
-primary = #0ace00
+;primary = #373B41
+primary = #707880
+foreground = #575670
 secondary = #8ABEB7
 alert = #A54242
-disabled = #707880
+;disabled = #707880
+disabled = #373B41
 
 [glyph]
 gright = 
@@ -85,7 +87,7 @@ radius = 6
 background = #00000000
 foreground = ${colors.foreground}
 
-line-size = 2pt
+line-size = 3pt
 
 border-size = 4pt
 border-color = #00000000
@@ -145,7 +147,6 @@ content-font = 2
 type = internal/bspwm
 pin-workspaces = true
 format-background = ${colors.background}
-
 label-active = %name%
 label-active-foreground = ${colors.primary}
 label-active-padding = 1
@@ -158,8 +159,6 @@ label-empty = %name%
 label-empty-foreground = ${colors.disabled}
 label-empty-padding = 1
 
-label-dimmed-occupied = %name%
-label-dimmed-empty-foreground = ${colors.disabled}
 
 [module/xworkspaces]
 type = internal/xworkspaces
@@ -274,7 +273,7 @@ date = %I:%M
 date-alt = %Y-%m-%d %H:%M:%S
 
 label = %date%
-label-foreground = ${colors.primary}
+label-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
 [settings]

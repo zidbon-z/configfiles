@@ -17,5 +17,8 @@ cat ~/.config/configfiles/theme_scripts/theme2/rofi_theme2 > ~/.config/rofi/conf
 # change spacevim
 sed -i 's/colorscheme =.*/colorscheme = "lunaperche"/' $HOME/.SpaceVim.d/init.toml
 
+# change polybar
+cat $HOME/.config/configfiles/theme_scripts/theme2/polybar_theme2 > $HOME/.config/polybar/config.ini
+
 # reload bspwm
 ~/.config/bspwm/bspwmrc
