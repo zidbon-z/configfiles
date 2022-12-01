@@ -198,6 +198,9 @@ super + t ; q
 super + t ; w
   ~/.config/configfiles/theme_scripts/theme2/theme2.sh
 
+super + t ; e
+  ~/.config/configfiles/theme_scripts/theme3/theme3.sh
+
 #################################################################
 
   #firefox &&
@@ -346,7 +349,8 @@ super + bracket{left,right}
 
 # set the window state
 super + space
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+	bspc node -t {tiled,floating}
+	#bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # Move focus to other monitor
 super + BackSpace
