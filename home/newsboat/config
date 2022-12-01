@@ -25,8 +25,8 @@ bind-key h quit
 color background         default   default
 color listnormal         default   default
 color listnormal_unread  default   default
-color listfocus          black     cyan
-color listfocus_unread   black     cyan
+color listfocus          black     blue
+color listfocus_unread   black     blue
 color info               default   black
 color article            default   default
 

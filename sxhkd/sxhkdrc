@@ -219,9 +219,22 @@ super + n
 #Launcher Menu
 #super + d
     #dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
-super + d
+
+#################################################################
+# Rofi
+#################################################################
+
+# Rofi run prompt
+super + d ; d
     rofi -show run
 
+# Rofi window selector
+super + d ; w
+    rofi -show window
+
+# Rofi emoji picker
+super + d ; e
+    rofi -show emoji
 
 #################################################################
 # Screenshot
