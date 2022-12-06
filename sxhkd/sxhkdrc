@@ -12,6 +12,10 @@ date = " %Y-%m-%d%"
 #################################################################
 # SUPER + FUNCTION KEYS
 #################################################################
+#
+# Tap Super Key = Alt F1
+alt + F1
+  rofi -kb-cancel Alt-F1 -show drun
 
 #Edit config files
 super + F1
@@ -200,6 +204,9 @@ super + t ; w
 
 super + t ; e
   ~/.config/configfiles/theme_scripts/theme3/theme3.sh
+
+super + t ; r
+  ~/.config/configfiles/theme_scripts/theme4/theme4.sh
 
 #################################################################
 

@@ -4,12 +4,15 @@
 -
 --Linux--
 -
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA
-https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA
-https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA
-https://www.youtube.com/feeds/videos.xml?channel_id=UCAiiOTio8Yu69c3XnR7nQBQ
-https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg Linux
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA Linux
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA Linux
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA Linux
+https://www.youtube.com/feeds/videos.xml?channel_id=UCAiiOTio8Yu69c3XnR7nQBQ Linux
+https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw Linux
+https://www.youtube.com/feeds/videos.xml?channel_id=UCylGUf9BvQooEFjgdNudoQg Linux
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5UAwBUum7CPN5buc-_N1Fw Linux
+https://www.youtube.com/feeds/videos.xml?channel_id=UCxQKHvKbmSzGMvUrVtJYnUA Linux
 -
 --Science--
 -
@@ -21,8 +24,11 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC3XTzVzaHQEd30rQbuvCtTQ
 https://www.youtube.com/feeds/videos.xml?channel_id=UCldfgbzNILYZA4dmDt4Cd6A
 #https://www.youtube.com/feeds/videos.xml?channel_id=
 -----------------------------
--------Linux_News------------
+-------RSS_FEEDS------------
 -----------------------------
+-
+--Linux_News--
+-
 https://www.reddit.com/r/linux/.rss
 https://www.linuxjournal.com/news/feed
 https://distrowatch.com/news/dw.xml
@@ -36,14 +42,14 @@ https://www.archlinux.org/feeds/news
 https://freedompenguin.com/feed
 https://sysads.co.uk/index.xml
 https://lukesmith.xyz/rss.xml
-------------------------------
--------GAMING_ON_LINUX--------
-------------------------------
+-
+--GAMING_ON_LINUX--
+-
 http://www.gamersonlinux.com/forum/portal/forums/-/index.rss
 https://www.gamingonlinux.com/article_rss.php
-------------------------------
--------Linux_Tutorials--------
-------------------------------
+-
+--Linux_Tutorials--
+-
 https://www.cyberciti.biz/feed
 https://www.tecmint.com/feed
 https://linuxhint.com/feed
