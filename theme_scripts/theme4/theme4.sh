@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # change bspwm
-cat $HOME/.config/configfiles/theme_scripts/theme2/bspwm_theme2 > $HOME/.config/bspwm/themes/theme
+cat $HOME/.config/configfiles/theme_scripts/theme4/bspwm_theme4 > $HOME/.config/bspwm/themes/theme
 
 # change nitrogen
 nitrogen --head=1 --set-scaled /home/zidbon/Downloads/xmas_linux.png --save
