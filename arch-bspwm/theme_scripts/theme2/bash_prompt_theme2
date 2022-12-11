@@ -1,4 +1,4 @@
-. "${HOME}/.config/configfiles/theme_scripts/bash_prompt_colors"
+. "${HOME}/.config/configfiles/arch-bspwm/theme_scripts/bash_prompt_colors"
 
 
 BRACKET_COLOR="$WHITE"

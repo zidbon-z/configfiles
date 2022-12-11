@@ -198,16 +198,16 @@ super + w ; w ; c
 # Themes
 
 super + t ; q
-  ~/.config/configfiles/theme_scripts/theme1/theme1.sh
+  ~/.config/configfiles/arch-bspwm/theme_scripts/theme1/theme1.sh
 
 super + t ; w
-  ~/.config/configfiles/theme_scripts/theme2/theme2.sh
+  ~/.config/configfiles/arch-bspwm/theme_scripts/theme2/theme2.sh
 
 super + t ; e
-  ~/.config/configfiles/theme_scripts/theme3/theme3.sh
+  ~/.config/configfiles/arch-bspwm/theme_scripts/theme3/theme3.sh
 
 super + t ; r
-  ~/.config/configfiles/theme_scripts/theme4/theme4.sh
+  ~/.config/configfiles/arch-bspwm/theme_scripts/theme4/theme4.sh
 
 #################################################################
 
