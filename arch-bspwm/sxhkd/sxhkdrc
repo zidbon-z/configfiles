@@ -15,8 +15,7 @@ date = " %Y-%m-%d%"
 #
 # Tap Super Key = Alt F1
 alt + F1
-  rofi -kb-cancel Escape -show drun
-#  rofi -kb-cancel Alt-F1 -show drun
+  if [ -n `pgrep rofi` ]; then rofi -show run -kb-cancel Alt-F1; else killall rofi; fi
 
 #Edit config files
 super + F1
