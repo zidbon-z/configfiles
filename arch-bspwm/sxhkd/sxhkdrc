@@ -13,9 +13,6 @@ date = " %Y-%m-%d%"
 # SUPER + FUNCTION KEYS
 #################################################################
 #
-# Tap Super Key = Alt F1
-alt + F1
-  if [ -n `pgrep rofi` ]; then rofi -show run -kb-cancel Alt-F1; else killall rofi; fi
 
 #Edit config files
 super + F1
@@ -207,6 +204,10 @@ super + t ; e
 
 super + t ; r
   ~/.config/configfiles/arch-bspwm/theme_scripts/theme4/theme4.sh
+
+super + t ; t
+  ~/.config/configfiles/arch-bspwm/theme_scripts/theme5/theme5.sh
+
 
 #################################################################
 

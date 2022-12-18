@@ -9,8 +9,18 @@
 #
 #LAUNCHERS
 pgrep -x sxhkd > /dev/null || sxhkd &
-#$HOME/.config/bspwm/autostart.sh
+
+##############################################
+# MY THEME CHANGER
+#THEME=$(cat $HOME/.config/bspwm/current_theme)
+#$HOME/.config/polybar/launch_theme.sh
+#. $HOME/.config/bspwm/themes/"$THEME"
+##############################################
+
+# Launch Polybar
 $HOME/.config/polybar/launch.sh
+
+#$HOME/.config/bspwm/autostart.sh
 #fix for moving spotify to specific workspace
 #bspc config external_rules_command ~/.config/bspwm/scripts/external_rules_command
 
@@ -56,7 +66,10 @@ bspc config merge_overlapping_monitors true
 #bspc config urgent_border_color        "#dd2727"
 
 
+
+# OLD THEME CHANGER
 . "${HOME}/.config/bspwm/themes/theme"
+
 #BSPWM theme custom
 bspc config normal_border_color         "$color1"
 bspc config active_border_color         "$color1"
@@ -149,6 +162,3 @@ sleep 2
 #xdotool click 1
 unclutter --timeout 2 &
 
-# ----- Enable Super Keys For Menu ----- #
-ksuperkey -e 'Super_L=Alt_L|F1' &
-#ksuperkey -e 'Super_R=Alt_L|F1' &
