@@ -115,7 +115,7 @@ font-8 = "MesloLGS NF:style=Regular:size=15;4"
 modules-left   = xdomenu dots bspwm dots mod  
 modules-center =
 #modules-right  = L song L2 RD battery RD2 cpuTemp RD ethernet RD2 cpu RD mpd RD2 info-cava RD volume RD2 bna RD date RD2
-modules-right  =  space RD RD2 RD RD2 RD ethernet RD2 cpu RD RD2 RD volume RD2 RD date RD2
+modules-right  =  space RD RD2 RD RD2 RD memory RD2 RD cpu RD2 RD volume RD2 RD date RD2
  
 spacing = 0
 separator =
@@ -243,7 +243,7 @@ format-muted-background = ${color.mb}
 format-muted-prefix = 婢
 format-muted-prefix-foreground = ${color.red}
 
-label-volume = %percentage%%  ` 
+label-volume = %percentage%% ` 
 label-muted = " Mute"
 label-muted-foreground = ${color.red}
 
@@ -275,6 +275,29 @@ content-prefix = 
 content-prefix-font = 7
 content-prefix-foreground = ${color.MAGENTA}
 content-padding = 0
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "CPU "
+format-prefix-foreground = ${color.green}
+format-foreground = ${color.green}
+label = %percentage:2%% `
+format-background = ${color.mb}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "RAM "
+format-prefix-foreground = #AD8EE6
+format-foreground = #AD8EE6
+label = %percentage_used:2%% `
+format-background = ${color.mb}
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -486,13 +509,13 @@ time = %I:%M %p
 time-alt = %A, %d %B %Y
 
 format = <label>
-format-prefix = ""
-; format-prefix = "祥"
-format-prefix-font = 3
+;format-prefix = ""
+;format-prefix = "祥" 
+;format-prefix-font = 3
 format-prefix-foreground = #e92ef0
 format-prefix-background = ${color.mb}
 
-label = " %time%  "
+label = "%time%  "
 label-font = 4
 label-foreground = #e92ef0
 label-background = ${color.mb}

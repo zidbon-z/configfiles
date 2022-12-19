@@ -9,7 +9,7 @@ nitrogen --head=0 --set-scaled /home/zidbon/.config/configfiles/arch-bspwm/theme
 
 # change kitty
 #cat $HOME/.config/configfiles/arch-bspwm/theme_scripts/theme5/kitty_theme5 > $HOME/.config/kitty/kitty.conf
-kitty +kitten themes --reload-in=all 1984 Dark
+kitty +kitten themes --reload-in=all Black Metal
 
 # change bash_prompt
   cat  $HOME/.config/configfiles/arch-bspwm/theme_scripts/theme5/bash_prompt_theme5 > $HOME/.bash_prompt
