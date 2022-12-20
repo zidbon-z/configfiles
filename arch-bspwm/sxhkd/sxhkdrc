@@ -122,6 +122,9 @@ super + c
 super + v
   tdrop -a -m -w 50% -x 25% -y 30% kitty -c NONE
 
+#################################################################
+# Polybar
+#################################################################
 
 super + b
   {polybar-msg cmd hide; bspc config top_padding 0, polybar-msg cmd show; bspc config top_padding 30}
@@ -191,7 +194,26 @@ super + w ; w ; c
   nitrogen --set-scaled ~/Pictures/Backgrounds/space/nasa-89127.jpg
 
 #################################################################
+# Exidia Wallpapers
+
+super + w ; e ; q
+  nitrogen --head=1 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina.png; nitrogen --head=0 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina.png
+
+super + w ; e ; w
+  nitrogen --head=1 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina-2.png; nitrogen --head=0 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina-2.png
+
+super + w ; e ; e
+  nitrogen --head=1 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina-3.png; nitrogen --head=0 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina-3.png
+
+super + w ; e ; a
+  nitrogen --head=1 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina-4.png; nitrogen --head=0 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina-4.png
+
+super + w ; e ; s
+  nitrogen --head=1 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina-5.png; nitrogen --head=0 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina-5.png
+
+#################################################################
 # Themes
+#################################################################
 
 super + t ; q
   ~/.config/configfiles/arch-bspwm/theme_scripts/theme1/theme1.sh

@@ -113,7 +113,7 @@ font-7 = "Material Design Icons Desktop:size=12;3"
 font-8 = "MesloLGS NF:style=Regular:size=15;4"
 
 modules-left   = xdomenu dots bspwm dots mod  
-modules-center =
+modules-center = mpd
 #modules-right  = L song L2 RD battery RD2 cpuTemp RD ethernet RD2 cpu RD mpd RD2 info-cava RD volume RD2 bna RD date RD2
 modules-right  =  space RD RD2 RD RD2 RD memory RD2 RD cpu RD2 RD volume RD2 RD date RD2
  
@@ -221,17 +221,19 @@ compositing-border = over
 
 pseudo-transparency = false
 
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+interval = 2
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
 [module/volume]
 
 type = internal/pulseaudio
-
-
 sink = alsa_output.pci-0000_12_00.3.analog-stereo
-
-
 use-ui-max = false
-
-
 interval = 5
 
 format-volume = <ramp-volume> <label-volume>
