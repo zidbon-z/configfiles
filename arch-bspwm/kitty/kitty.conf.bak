@@ -631,7 +631,7 @@ inactive_tab_font_style normal
 
 #: The foreground and background colors
 
-background_opacity 0.7 
+background_opacity 0.8 
 
 #: The opacity of the background. A number between 0 and 1, where 1 is
 #: opaque and 0 is fully transparent.  This will only work if
@@ -1353,6 +1353,6 @@ map kitty_mod+delete clear_terminal reset active
 
 
 # BEGIN_KITTY_THEME
-# Black Metal
+# Kitty Theme5
 include current-theme.conf
 # END_KITTY_THEME
