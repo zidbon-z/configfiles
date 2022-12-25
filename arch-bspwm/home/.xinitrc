@@ -61,7 +61,6 @@ xsetroot -cursor_name left_ptr &
 nitrogen --restore &
 picom &
 udiskie & 
-xsettingsd &
 export QT_QPA_PLATFORMTHEME=qt5ct
 exec bspwm
 

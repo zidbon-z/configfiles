@@ -256,3 +256,4 @@ date +'%r'
 date +'%m/%d/%Y'
 
 #neofetch
+. "$HOME/.cargo/env"

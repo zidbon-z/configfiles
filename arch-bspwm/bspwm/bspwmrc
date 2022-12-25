@@ -132,6 +132,7 @@ bspc rule -a Xfce4-settings-manager state=tiled
 #bspc rule -a Thunar desktop='^8' follow=on
 #bspc rule -a discord desktop='^9' follow=on
 #bspc rule -a Spotify desktop='^10' follow=on
+bspc rule -a Lxappearance desktop='^10' 
 
 
 bspc config ignore_ewmh/focus true
@@ -161,4 +162,5 @@ sleep 2
 #xdotool mousemove 2333 150
 #xdotool click 1
 unclutter --timeout 2 &
-
+lxappearance
+#xsettingsd &
