@@ -1,0 +1,1052 @@
+[colour]
+red = E60000
+black = 000000
+transparent = 00000000
+
+;Transparency helper
+;100% — FF
+;99% — FC
+;98% — FA
+;97% — F7
+;96% — F5
+;95% — F2
+;94% — F0
+;93% — ED
+;92% — EB
+;91% — E8
+;90% — E6
+;89% — E3
+;88% — E0
+;87% — DE
+;86% — DB
+;85% — D9
+;84% — D6
+;83% — D4
+;82% — D1
+;81% — CF
+;80% — CC
+;79% — C9
+;78% — C7
+;77% — C4
+;76% — C2
+;75% — BF
+;74% — BD
+;73% — BA
+;72% — B8
+;71% — B5
+;70% — B3
+;69% — B0
+;68% — AD
+;67% — AB
+;66% — A8
+;65% — A6
+;64% — A3
+;63% — A1
+;62% — 9E
+;61% — 9C
+;60% — 99
+;59% — 96
+;58% — 94
+;57% — 91
+;56% — 8F
+;55% — 8C
+;54% — 8A
+;53% — 87
+;52% — 85
+;51% — 82
+;50% — 80
+;49% — 7D
+;48% — 7A
+;47% — 78
+;46% — 75
+;45% — 73
+;44% — 70
+;43% — 6E
+;42% — 6B
+;41% — 69
+;40% — 66
+;39% — 63
+;38% — 61
+;37% — 5E
+;36% — 5C
+;35% — 59
+;34% — 57
+;33% — 54
+;32% — 52
+;31% — 4F
+;30% — 4D
+;29% — 4A
+;28% — 47
+;27% — 45
+;26% — 42
+;25% — 40
+;24% — 3D
+;23% — 3B
+;22% — 38
+;21% — 36
+;20% — 33
+;19% — 30
+;18% — 2E
+;17% — 2B
+;16% — 29
+;15% — 26
+;14% — 24
+;13% — 21
+;12% — 1F
+;11% — 1C
+;10% — 1A
+;9% — 17
+;8% — 14
+;7% — 12
+;6% — 0F
+;5% — 0D
+;4% — 0A
+;3% — 08
+;2% — 05
+;1% — 03
+;0% — 00
+##########################################################################################################
+#																										 
+#    Copyright © 2022 To Cyb3rTh1eveZ																	 
+#																										 
+#     ██████╗██╗   ██╗██████╗ ██████╗ ██████╗ ████████╗██╗  ██╗ ██╗███████╗██╗   ██╗███████╗███████╗	 
+#    ██╔════╝╚██╗ ██╔╝██╔══██╗╚════██╗██╔══██╗╚══██╔══╝██║  ██║███║██╔════╝██║   ██║██╔════╝╚══███╔╝     
+#    ██║      ╚████╔╝ ██████╔╝ █████╔╝██████╔╝   ██║   ███████║╚██║█████╗  ██║   ██║█████╗    ███╔╝      
+#    ██║       ╚██╔╝  ██╔══██╗ ╚═══██╗██╔══██╗   ██║   ██╔══██║ ██║██╔══╝  ╚██╗ ██╔╝██╔══╝   ███╔╝       
+#    ╚██████╗   ██║   ██████╔╝██████╔╝██║  ██║   ██║   ██║  ██║ ██║███████╗ ╚████╔╝ ███████╗███████╗     
+#     ╚═════╝   ╚═╝   ╚═════╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═╝╚══════╝  ╚═══╝  ╚══════╝╚══════╝     
+#																										 
+#																										 
+#																										 
+#    Copyright (C) Mahmoud Mohamed (Ozil)  <https://github.com/mmsaeed509>								 
+#    LICENSE © GNU-GPL3																					 
+#																										 
+##########################################################################################################
+
+;; Global WM Settings ;;
+
+[global/wm]
+margin-bottom = 0
+margin-top = 0
+
+#include-file = ~/.config/bspwm/polybar/system
+#include-file = ~/.config/bspwm/polybar/black-red/colors
+
+# contains brightness, workspaces, Date, etc.... #
+#include-file = ~/.config/bspwm/polybar/black-red/modules/modules
+
+# contains Music, microphone, etc.... #
+#include-file = ~/.config/bspwm/polybar/black-red/modules/mediaModules
+
+# contains CPU, Temperature, etc.... #
+#include-file = ~/.config/bspwm/polybar/black-red/modules/monitoringModules
+
+# contains the separators (e.g  , | , <| ,  ,etc..) #
+#include-file = ~/.config/bspwm/polybar/black-red/modules/separatorsModules
+
+########################################################################
+[bar/bar1]
+monitor = DP-0
+monitor-strict = false
+override-redirect = false
+
+bottom = false
+fixed-center = true
+
+; width = 99s%
+; height = 27
+
+; offset-x = 0.5%
+; offset-y = 0.5%
+
+width = 99%
+height = 35
+
+offset-x = 0.5%
+offset-y = 0.5%
+
+background = ${color.BACKGROUND}
+foreground = ${color.FOREGROUND}
+
+radius-top = 0.0
+radius-bottom = 0.0
+
+line-size = 2
+line-color = ${color.BLUE}
+
+border-size = 1
+border-color = #BA0000
+
+padding = 0
+module-margin-left = 0
+module-margin-right = 0
+
+
+font-0 = "Iosevka Nerd Font:size=10;3"
+font-1 = "Iosevka Nerd Font:size=12;3"
+font-2 = "google\-mdi:size=12;3"
+font-3 = "Iosevka:style=bold:"size=12;3"
+font-4 = "Iosevka Nerd Font:size=18;4"
+font-5 = JetBrainsMono Nerd Font:style=Bold:pixelsize=9;3
+font-6 = JetBrainsMono Nerd Font:size=13;4
+font-7 = Material Design Icons:style=Bold:size=9;3
+font-8 = unifont:fontformat=truetype:size=9;3
+font-9 = "Iosevka:style=bold:size=15;4"
+
+#modules-left   = pip  bspwm  pip  info-cava  pip  pip mod pip
+modules-left   = pip  bspwm  pip  pip  pip mod pip
+modules-center = space mpd space   
+modules-right  = pip pip Dspace pip volume space space space pip space date space
+
+separator =
+spacing = 0
+
+dim-value = 1.0
+
+wm-name = bspwm
+locale = 
+
+tray-position = right
+tray-detached = false
+tray-maxsize = 16
+tray-transparent = false
+tray-background = ${color.BACKGROUND}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1.0
+
+wm-restack = bspwm
+
+enable-ipc = true
+
+; bspwm
+scroll-up = bspc desktop -f prev.local
+scroll-down = bspc desktop -f next.local
+
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+throttle-input-for = 30
+
+screenchange-reload = false
+
+compositing-background = source
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over
+########################################################################
+
+########################################################################
+[bar/bar2]
+monitor = DP-2
+monitor-strict = false
+override-redirect = false
+
+bottom = false
+fixed-center = true
+
+; width = 99s%
+; height = 27
+
+; offset-x = 0.5%
+; offset-y = 0.5%
+
+width = 99%
+height = 35
+
+offset-x = 0.5%
+offset-y = 0.5%
+
+background = ${color.BACKGROUND}
+foreground = ${color.FOREGROUND}
+
+radius-top = 0.0
+radius-bottom = 0.0
+
+line-size = 2
+line-color = ${color.BLUE}
+
+border-size = 1
+border-color = #BA0000
+
+padding = 0
+module-margin-left = 0
+module-margin-right = 0
+
+
+font-0 = "Iosevka Nerd Font:size=10;3"
+font-1 = "Iosevka Nerd Font:size=12;3"
+font-2 = "google-mdi:size=12;3"
+font-3 = "Iosevka:style=bold:"size=12;3"
+font-4 = "Iosevka Nerd Font:size=18;4"
+font-5 = JetBrainsMono Nerd Font:style=Bold:pixelsize=9;3
+font-6 = JetBrainsMono Nerd Font:size=13;4
+font-7 = Material Design Icons:style=Bold:size=9;3
+font-8 = unifont:fontformat=truetype:size=9;3
+font-9 = "Iosevka:style=bold:size=15;4"
+
+modules-left   = pip  bspwm  pip    pip  pip mod pip
+modules-center = space mpd space   
+modules-right  = pip pip Dspace pip volume space space space pip space date space
+
+separator =
+spacing = 0
+
+dim-value = 1.0
+
+wm-name = bspwm
+locale = 
+
+tray-position = right
+tray-detached = false
+tray-maxsize = 16
+tray-transparent = false
+tray-background = ${color.BACKGROUND}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1.0
+
+wm-restack = bspwm
+
+enable-ipc = true
+
+; bspwm
+scroll-up = bspc desktop -f prev.local
+scroll-down = bspc desktop -f next.local
+
+#[settings]
+#throttle-output = 5
+#throttle-output-for = 10
+#throttle-input-for = 30
+#
+#screenchange-reload = false
+#
+#compositing-background = source
+#compositing-foreground = over
+#compositing-overline = over
+#compositing-underline = over
+#compositing-border = over
+########################################################################
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/bna]
+type = custom/text
+
+content = " NON"
+content-prefix = 
+content-prefix-font = 2
+content-prefix-foreground = #BA0000
+content-padding = 0
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/backlight]
+type = internal/xbacklight
+
+card = intel_backlight
+
+format = <ramp> <label>
+
+label = %percentage%%
+label-font = 
+; label-foreground = #BA0000
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-5 = 
+ramp-6 = 
+ramp-7 = 
+ramp-8 = 
+ramp-9 = 
+ramp-font = 2 
+ramp-foreground = #BA0000
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/brightness]
+type = internal/backlight
+
+card = ${system.graphics_card}
+
+enable-scroll = true
+
+format = <ramp> <label>
+
+label = %percentage%%
+; label-font = 7
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-5 = 
+ramp-6 = 
+ramp-7 = 
+ramp-8 = 
+ramp-9 = 
+ramp-font = 2
+ramp-foreground = #BA0000
+
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/bspwm]
+type = internal/bspwm
+
+pin-workspaces = true
+inline-mode = false
+enable-click = true
+enable-scroll = true
+reverse-scroll = true
+fuzzy-match = true
+
+ws-icon-0 = I;
+ws-icon-1 = II;
+ws-icon-2 = III;
+ws-icon-3 = IV;
+ws-icon-4 = V;
+ws-icon-5 = VI;
+ws-icon-6 = VII;
+ws-icon-7 = VIII;
+ws-icon-8 = IX;
+ws-icon-default = 
+
+format = <label-state>
+format-font = 2
+
+label-monitor = %name%
+
+
+label-focused = [%name%]
+label-focused-foreground = #A3B5B8
+label-focused-background = ${color.BGL}
+label-focused-underline = #A3B5B8
+label-focused-padding = 0
+
+label-occupied = %name%
+label-occupied-foreground = #F66D78
+label-occupied-background = ${color.BGL}
+label-occupied-underline = ${color.GREEN}
+label-occupied-padding = 0
+
+label-urgent = %name%
+label-urgent-foreground = #BA0000
+label-urgent-background = ${color.BGL}
+label-urgent-underline = ${color.RED}
+label-urgent-padding = 0
+
+label-empty = %name%
+label-empty-foreground = #5E0F0B
+label-empty-background = ${color.BGL}
+label-empty-padding = 0
+
+; Separator in between workspaces
+label-separator = " "
+label-separator-padding = 0
+label-separator-foreground = #BA0000
+label-separator-background = ${color.BGL}
+
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/mod]
+type = internal/bspwm
+
+format = <label-mode>
+format-background = ${color.BGL}
+format-foreground = #BA0000
+format-padding = 1
+format-font = 4
+
+label-monocle = "Monocle"
+label-tiled = "Tiled"
+
+label-floating = " | Float"
+label-pseudotiled = " | Pseudo"
+label-fullscreen = " | Full"
+
+label-locked = " | Locked"
+label-sticky = " | Sticky"
+label-private = " | Private"
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/date]
+type = internal/date
+
+interval = 1.0
+
+time = %I:%M %p
+time-alt = %A, %d %B %Y
+
+format = <label>
+format-prefix = " "
+format-prefix-font = 
+format-prefix-foreground = #BA0000
+format-prefix-background = ${color.BGL}
+
+label = %time%
+label-font = 
+label-foreground = ${color.CYAN2}
+label-background = ${color.BGL}
+
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+; If you use both a wired and a wireless network, add both modules in config.
+[module/ethernet]
+type = internal/network
+interface = ${system.network_interface}
+
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <label-connected>
+format-connected-prefix = " "
+format-connected-prefix-font = 3
+format-connected-prefix-foreground = #BA0000
+
+format-disconnected = <label-disconnected>
+format-disconnected-prefix = " "
+format-disconnected-prefix-font = 3
+format-disconnected-prefix-foreground = #BA0000
+
+; label-connected = "%{A1:sh ~/.config/bspwm/rofi/bin/network &:}  %downspeed%   %upspeed% %{A}"
+label-connected = "%{A1:sh ~/.config/bspwm/rofi/bin/network &:} %downspeed% ◆  %upspeed%%{A}"
+
+label-disconnected = "%{A1:sh ~/.config/bspwm/rofi/bin/network &:}Offline%{A}"
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/network]
+type = internal/network
+interface = ${system.network_interface}
+
+interval = 1.0
+
+
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <ramp-signal> <label-connected>
+
+format-disconnected = <label-disconnected>
+format-disconnected-prefix = " "
+format-disconnected-prefix-font = 
+format-disconnected-prefix-foreground =  #BA0000
+
+label-connected = "%{A1:nmd &:}%essid%%{A}"
+label-disconnected = "%{A1:nmd &:}disconnected%{A}"
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-font = 
+ramp-signal-foreground = #BA0000
+
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+label-layout = %layout%
+label-layout-foreground = #BA0000
+label-layout-font = 4
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-foreground = #BA0000
+label-indicator-background = ${colors.secondary}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/notification-github]
+type = custom/script
+exec = ~/.config/bspwm/polybar/scripts/notification-github.sh
+interval = 60
+label-background = ${color.BGL}
+label-foreground = #BA0000
+click-left = google-chrome-stable --newtab https://github.com/notifications
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/themes]
+type = custom/text
+
+; content = ""
+content = ""
+content-font = 5
+content-foreground = #BA0000
+
+content-padding = 0
+
+click-left = ~/.config/bspwm/rofi/bin/themes
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/xdomenu]
+type = custom/text
+interval = 1
+content = " "
+content-font = 5
+content-foreground = #BA0000
+content-padding = 0
+click-left = jgmenu_run
+
+
+
+; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/dots]
+type = custom/text
+content = "  "
+
+content-background = ${color.BACKGROUND}
+content-foreground = ${color.RED}
+content-padding = 0
+content-font = 5
+
+; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/pip]
+type = custom/text
+content = |
+
+content-background = ${color.BACKGROUND}
+content-foreground = #BA0000
+content-padding = 1
+content-font = 5
+
+; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/Lpip]
+type = custom/text
+content = "<|"
+
+content-background = ${color.BACKGROUND}
+content-foreground = ${color.RED}
+content-padding = 1
+content-font = 5
+
+; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/Rpip]
+type = custom/text
+content = "|>"
+
+content-background = ${color.BACKGROUND}
+content-foreground = ${color.RED}
+content-padding = 1
+content-font = 5
+
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/space]
+type = custom/text
+content = " "
+content-background = ${color.background}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/Dspace]
+type = custom/text
+content = "  "
+content-background = ${color.background}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/sep]
+type = custom/text
+;content = ◆
+content = 
+
+content-background = ${color.BACKGROUND}
+content-foreground = ${color.GREEN}
+content-padding = 2
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+##########################
+#       LD modules       #
+##########################
+
+[module/LD]
+type = custom/text
+content = "%{T5}%{T-}"
+content-background = ${color.background}
+content-foreground = ${color.BGL}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/LDmpd]
+type = custom/text
+
+;content = "%{T5}(|%{T-}"
+content = "%{T5}(%{T-}"
+
+content-background = ${color.BACKGROUND}
+content-foreground = #989cff
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+##########################
+#       RD modules       #
+##########################
+
+[module/RD]
+type = custom/text
+
+;content = "%{T5}█%{T-}"
+content = "%{T5}%{T-}"
+
+content-background = ${color.background}
+content-foreground = ${color.BGL}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/RDmpd]
+type = custom/text
+
+content = "%{T5})%{T-}"
+;content = "%{T5}|)%{T-}"
+
+content-background = ${color.BACKGROUND}
+content-foreground = #989cff
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/volume]
+
+type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+
+
+use-ui-max = false
+
+interval = 5
+
+format-volume = <ramp-volume> <label-volume>
+
+format-muted = <label-muted>
+format-muted-prefix = 婢
+format-muted-prefix-font = 
+format-muted-prefix-foreground = #BA0000
+
+label-volume = %percentage%%
+label-volume-font = 
+label-muted = " Mute"
+muted-label-font = 
+label-muted-foreground = #BA0000
+
+ramp-volume-0 = 奄
+ramp-volume-1 = 奄
+ramp-volume-2 = 奄
+ramp-volume-3 = 奔
+ramp-volume-4 = 奔
+ramp-volume-5 = 奔
+ramp-volume-6 = 墳
+ramp-volume-7 = 墳
+ramp-volume-8 = 墳
+ramp-volume-9 = 墳
+ramp-volume-font = 3
+ramp-volume-foreground = #BA0000
+
+ramp-headphones-0 = 
+ramp-headphones-1 = 
+
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/mpd]
+type = internal/mpd
+
+;;host = 127.0.0.1
+;;port = 6600
+;;password = mysecretpassword
+
+interval = 2
+
+format-online = <label-song> <icon-prev> <toggle> <icon-next>
+format-online-prefix = " "
+format-online-prefix-foreground = #BA0000
+
+format-playing = ${self.format-online}
+format-paused = <label-song> <toggle>
+
+format-offline = <label-offline>
+format-offline-prefix = " "
+format-offline-prefix-foreground = #BA0000
+label-offline = "Offline"
+
+label-song =  "%title% | %artist%"
+; label-song =  "%title% "
+label-song-maxlen = 40
+label-song-ellipsis = true
+
+icon-play = 
+icon-play-font = 2
+icon-play-foreground = #BA0000
+icon-pause = 
+icon-pause-font = 2
+icon-pause-foreground = #BA0000
+icon-stop = 
+icon-stop-foreground = #BA0000
+icon-prev = 玲
+icon-prev-font = 2
+icon-prev-foreground = #BA0000
+icon-next = 怜
+icon-next-font = 2
+icon-next-foreground = #BA0000
+
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/info-cava]
+type = custom/script
+exec =  ~/.config/bspwm/polybar/scripts/cava
+
+format = <label>
+label = %output%
+format-foreground = #BA0000
+format-background = ${color.BGL}
+tail = true
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+; pipewire-microphone
+[module/pip-mic]
+type = custom/script
+exec = ~/.config/bspwm/polybar/scripts/pipewire-microphone.sh
+tail = true
+click-left = ~/.config/bspwm/polybar/scripts/pipewire-microphone.sh --toggle &
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+[module/battery]
+type = internal/battery
+
+full-at = 99
+
+battery = ${system.battery}
+adapter = ${system.adapter}
+
+format-charging = <animation-charging><label-charging>
+label-charging = %percentage%%
+format-charging-foreground = #BA0000
+format-charging-background = ${colors.background}
+format-charging-font = 
+
+format-discharging = <ramp-capacity><label-discharging>
+label-discharging = %percentage%%
+format-discharging-foreground = #BA0000
+format-discharging-background = ${colors.background}
+format-discharging-font = 
+
+format-full-prefix = " "
+format-full-prefix-foreground = #BA0000
+format-foreground = #BA0000
+format-background = ${colors.background}
+format-full-prefix-font = 
+label-full = %percentage%%
+label-full-font = 
+
+label-discharging-foreground =#BA0000
+label-discharging-font = 
+
+ramp-capacity-foreground =  #BA0000
+label-charging-foreground = #BA0000
+label-charging-font = 
+
+label-padding = 1
+
+ramp-capacity-0 = " " 
+ramp-capacity-1 = " " 
+ramp-capacity-2 = " " 
+ramp-capacity-3 = " " 
+ramp-capacity-4 = " "
+
+
+animation-charging-0 = " " 
+animation-charging-1 = " " 
+animation-charging-2 = " " 
+animation-charging-3 = " " 
+animation-charging-4 = " "
+
+
+animation-charging-foreground = #BA0000
+animation-charging-framerate = 750
+animation-charging-font = 4
+
+format-charging-padding = 1
+format-discharging-padding = 1
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/cpu]
+type = internal/cpu
+
+interval = 1
+
+format = <label>
+
+format-prefix = " "
+format-prefix-font = 5
+format-prefix-foreground = #BA0000
+format-prefix-background = ${color.BGL}
+label = "%{A1:stacer &:}CPU %percentage%%%{A}"
+label-font = 
+label-background = ${color.BGL}
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/filesystem]
+type = internal/fs
+
+mount-0 = /
+interval = 30
+fixed-values = true
+
+format-mounted = <label-mounted>
+format-mounted-prefix = " "
+format-mounted-prefix-foreground = ${color.background}
+format-mounted-prefix-background = ${color.cyan}
+
+format-unmounted = <label-unmounted>
+format-unmounted-prefix = " "
+format-unmounted-prefix-foreground = ${color.background}
+format-unmounted-prefix-background = ${color.cyan}
+
+label-mounted = "%{A1:alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e duf &:} %free%%{A}"
+label-unmounted = " %mountpoint%: NA"
+label-mounted-foreground = ${color.background}
+
+label-mounted-background = ${color.cyan}
+label-unmounted-background = ${color.cyan}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/cpuTemp]
+type = custom/script
+exec = ~/.config/bspwm/polybar/black-red/modules/heatSensors
+interval = 1
+click-left = xsensors
+format-foreground = #BA0000
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+#[module/memory]
+#type = custom/script
+#exec = free -g | sed -n 's/^Mem:\s\+[0-9]\+\s\+\([0-9]\+\)\s.\+/\1/p'
+#format = <label>
+#format-prefix = "" 
+#format-prefix-font = 
+#
+#label = "%{A1:alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e htop &:}%output%GB%{A}"
+#label-padding = 1
+#label-font = 
+#format-prefix-foreground =#BA0000
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/updates-pacman]
+type = custom/script
+exec = ~/.config/bspwm/polybar/scripts/updates-pacman.sh
+interval = 180
+format = <label>
+
+;label = %output% Updates
+label = "%{A1:alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e sudo pacman -Syyu &:} %output% Updates%{A}"
+
+format-font = 4
+label-foreground = #e92ef0
+;label-foreground = #BF616A
+label-background = ${color.BGL}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/time]
+type = custom/script
+exec = date '+%I:%M:%S%P'
+interval = 1.0
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+#
+## Select the right temperature file. # 
+#for temp_dir in /sys/class/hwmon/*; do
+#    [[ "$(< "${temp_dir}/name")" =~ (coretemp|fam15h_power|k10temp) ]] && {
+#
+#		temp_dirs=("$temp_dir"/temp*_input)
+#        temp_dir=${temp_dirs[0]}
+#        break
+#
+#	}
+#
+#done
+#
+#
+## Get CPU temp. #
+#[[ -f "$temp_dir" ]] && deg="$(($(< "$temp_dir") * 100 / 10000))"
+#
+## Add CPU temp to the output. #
+#if [[ "$cpu_temp" != "off" && "$deg" ]]; then
+#    deg="${deg//.}"
+#    
+#    # Convert to Fahrenheit if enabled
+#    [[ "$cpu_temp" == "F" ]] && deg="$((deg * 90 / 50 + 320))"
+#    
+#	deg_no_format="${deg/${deg: -1}}"
+#
+#    # Format the output
+#    deg="${deg/${deg: -1}}°${cpu_temp:-C}"
+#
+#
+#fi
+#
+## from  0°C to 40°C print ->  
+#if [[ "$deg_no_format" -le 40 ]] 
+#	then
+#		# the ' %{T3} ' -> pass font type to polybar config file 
+#		# the selected font type is number 3, which is (font-3 = "Iosevka:style=bold:"size=12;3" )
+#		echo "%{F}%{T2} $deg"
+#
+## from 40°C to 60°C print -> 
+#elif [[ "$deg_no_format" -le 60 ]] 
+#	then
+#		echo "%{F}%{T2} $deg"
+#
+#
+## from 60°C to 85°C print -> 
+#elif [[ "$deg_no_format" -le 85 ]]
+#	then
+#		echo "%{F}%{T2} $deg"
+#
+## from 85°C to +... print ->  
+#elif [[ "$deg_no_format" -gt 85 ]] 
+#	then
+#		# the  ' -n "%{F#FF0008}"  ' -> red font as 85°C to +... is the default warn temperature
+#		echo -n "%{T3}%{F#FF0008} %{F#FF0008}$deg"
+#fi

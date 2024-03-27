@@ -29,6 +29,9 @@ cat $HOME/.config/configfiles/arch-bspwm/theme_scripts/theme5/polylaunch > $HOME
 cat $HOME/.config/configfiles/arch-bspwm/theme_scripts/theme5/gtk2 > $HOME/.gtkrc-2.0
 cat $HOME/.config/configfiles/arch-bspwm/theme_scripts/theme5/gtk3 > $HOME/.config/gtk-3.0/settings.ini
 
+# change qt5 cursor
+cat $HOME/.config/configfiles/arch-bspwm/theme_scripts/theme5/qt5 > $HOME/.icons/default/index.theme
+
 # reload bspwm
 ~/.config/bspwm/bspwmrc
 

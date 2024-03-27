@@ -127,7 +127,7 @@ super + v
 #################################################################
 
 super + b
-  {polybar-msg cmd hide; bspc config top_padding 0, polybar-msg cmd show; bspc config top_padding 30}
+  {polybar-msg cmd hide; bspc config top_padding 0, polybar-msg cmd show; bspc config top_padding 40}
 
 #################################################################
 # Wallpapers
@@ -211,6 +211,9 @@ super + w ; e ; a
 super + w ; e ; s
   nitrogen --head=1 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina-5.png; nitrogen --head=0 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina-5.png
 
+super + w ; x ; x
+  nitrogen --set-auto ~/Pictures/Backgrounds/wideScreen/wallhaven-w8zjrx.jpg
+
 #################################################################
 # Themes
 #################################################################
@@ -229,6 +232,17 @@ super + t ; r
 
 super + t ; t
   ~/.config/configfiles/arch-bspwm/theme_scripts/theme5/theme5.sh
+
+super + t ; y
+  ~/.config/configfiles/arch-bspwm/theme_scripts/theme6/theme6.sh
+
+super + t ; u
+  ~/.config/configfiles/arch-bspwm/theme_scripts/theme7/theme7.sh
+
+super + t ; i
+  ~/.config/configfiles/arch-bspwm/theme_scripts/theme8/theme8.sh
+
+
 
 #################################################################
 # Applications

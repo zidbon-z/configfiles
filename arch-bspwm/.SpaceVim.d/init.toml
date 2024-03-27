@@ -41,6 +41,10 @@ name = 'shell'
 default_position = 'top'
 default_height = 30
 
+[[layers]]
+name = "checkers"
+lint_on_the_fly = true
+
 # Enable Debugging
 [[layers]]
 name = 'debug'
@@ -48,6 +52,12 @@ name = 'debug'
 # Edit Layer  
 [[layers]]
 name = 'edit'
+
+# Emmet-vim for HTML  
+#[[layers]]
+#name = "lang#html"
+#emmet_filetyps = ['html']
+
 
 # Default Layer (for copy and paste)
 [[layers]]
@@ -58,6 +68,12 @@ name = "default"
 [[custom_plugins]]
     repo = "lilydjwg/colorizer"
     merged = false
+
+# Custom Plugins
+[[custom_plugins]]
+    repo = "mattn/emmet-vim"
+    merged = false
+
 
 # Custom Plugins
 [[custom_plugins]]
@@ -82,5 +98,15 @@ name = "default"
 # Custom Plugins
 [[custom_plugins]]
     repo = "alvan/vim-closetag"
+    merged = false
+
+# Custom Plugins
+[[custom_plugins]]
+    repo = "mlaursen/vim-react-snippets"
+    merged = false
+
+# Custom Plugins
+[[custom_plugins]]
+    repo = "SirVer/ultisnips"
     merged = false
 ##############################################
