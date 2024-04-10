@@ -211,6 +211,9 @@ super + w ; e ; a
 super + w ; e ; s
   nitrogen --head=1 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina-5.png; nitrogen --head=0 --set-scaled ~/Pictures/Backgrounds/exodia/Cristina-5.png
 
+super + w ; e ; d
+  nitrogen --head=1 --set-scaled ~/Shared/backgrounds/treesByWater.jpg; nitrogen --head=0 --set-scaled ~/Shared/backgrounds/treesByWater.jpg
+
 super + w ; x ; x
   nitrogen --set-auto ~/Pictures/Backgrounds/wideScreen/wallhaven-w8zjrx.jpg
 
