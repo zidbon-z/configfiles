@@ -30,6 +30,7 @@ return {
 					"html",
 					"emmet_ls",
 					"cssls",
+					"tailwindcss",
 				},
 			})
 		end,

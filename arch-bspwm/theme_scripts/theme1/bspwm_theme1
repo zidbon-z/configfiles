@@ -1,5 +1,0 @@
-# test
-color1="#510275"
-color2="#0ace00"
-bspc config border_radius        20
-bspc config border_width         10

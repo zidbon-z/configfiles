@@ -18,7 +18,7 @@ kitty +kitten themes --reload-in=all kitty theme5
 cat ~/.config/configfiles/arch-bspwm/theme_scripts/theme6/rofi > ~/.config/rofi/config.rasi
 
 # change spacevim
-sed -i 's/colorscheme =.*/colorscheme = "lunaperche"/' $HOME/.SpaceVim.d/init.toml
+sed -i 's/vim.cmd("colorscheme.*/vim.cmd("colorscheme evergarden")/' $HOME/.config/nvim/lua/zidbon/core/options.lua
 
 # change polybar
 cat $HOME/.config/configfiles/arch-bspwm/theme_scripts/theme6/polybar > $HOME/.config/polybar/config.ini
