@@ -125,15 +125,15 @@ then
     fi
   fi
 
-  # Symlink spacevim
-  if [ -d "$HOME/.config/configfiles/arch-bspwm/.SpaceVim.d" ]
+  # Symlink Neovim
+  if [ -d "$HOME/.config/configfiles/arch-bspwm/nvim" ]
   then
-    if [ -d "$HOME/.SpaceVim.d" ]
+    if [ -d "$HOME/.config/nvim" ]
     then
-      rm -rf "$HOME/.SpaceVim.d"
-      ln -s $HOME/.config/configfiles/arch-bspwm/.SpaceVim.d $HOME/.SpaceVim.d
+      rm -rf "$HOME/.config/nvim"
+      ln -s $HOME/.config/configfiles/arch-bspwm/nvim $HOME/.config/nvim
     else
-      ln -s $HOME/.config/configfiles/arch-bspwm/.SpaceVim.d $HOME/.SpaceVim.d
+      ln -s $HOME/.config/configfiles/arch-bspwm/nvim $HOME/.config/nvim
     fi
   fi
  
@@ -149,14 +149,47 @@ then
     fi
   fi
  
-
-
-
-
-
-
-
-
+  # Symlink Waybar
+  if [ -d "$HOME/.config/configfiles/arch-bspwm/waybar" ]
+  then
+    if [ -d "$HOME/.config/waybar" ]
+    then
+      rm -rf "$HOME/.config/waybar"
+      ln -s $HOME/.config/configfiles/arch-bspwm/waybar $HOME/.config/waybar
+    else
+      ln -s $HOME/.config/configfiles/arch-bspwm/waybar $HOME/.config/waybar
+    fi
+  fi
+ 
+  # Symlink Waypaper
+  if [ -d "$HOME/.config/configfiles/arch-bspwm/waypaper" ]
+  then
+    if [ -d "$HOME/.config/waypaper" ]
+    then
+      rm -rf "$HOME/.config/waypaper"
+      ln -s $HOME/.config/configfiles/arch-bspwm/waypaper $HOME/.config/waypaper
+    else
+      ln -s $HOME/.config/configfiles/arch-bspwm/waypaper $HOME/.config/waypaper
+    fi
+  fi
+ 
+ 
+  # Symlink Hyprland config
+  if [ -d "$HOME/.config/configfiles/arch-bspwm/hypr" ]
+  then
+    if [ -d "$HOME/.config/hypr" ]
+    then
+      rm -rf "$HOME/.config/hypr"
+      ln -s $HOME/.config/configfiles/arch-bspwm/hypr $HOME/.config/hypr
+    else
+      ln -s $HOME/.config/configfiles/arch-bspwm/hypr $HOME/.config/hypr
+    fi
+  fi
+ 
+ 
+ 
+ 
+ 
 
 else
   #cd $HOME/.config
