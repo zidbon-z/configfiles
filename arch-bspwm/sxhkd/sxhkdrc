@@ -81,8 +81,8 @@ super + slash
     kitty -c $HOME/.config/kitty/kitty2.conf
 
 #Xterm
-super + x
-    xterm
+#super + x
+#    xterm
 
 #################################################################
 
@@ -121,6 +121,10 @@ super + c
 # Open kitty in a scratch pad
 super + v
   tdrop -a -m -w 50% -x 25% -y 30% kitty -c NONE
+
+# Put scratch pad back in tiling mode
+super + x
+  bspc node focused -t tiled
 
 #################################################################
 # Polybar

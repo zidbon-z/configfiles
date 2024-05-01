@@ -55,7 +55,7 @@ fi
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
 xset s off &
-#xset -dpms &
+xset -dpms &
 xset s noblank &
 xsetroot -cursor_name left_ptr &
 nitrogen --restore &
