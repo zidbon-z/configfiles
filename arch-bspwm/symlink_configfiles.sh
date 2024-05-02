@@ -173,7 +173,6 @@ then
     fi
   fi
  
- 
   # Symlink Hyprland config
   if [ -d "$HOME/.config/configfiles/arch-bspwm/hypr" ]
   then
