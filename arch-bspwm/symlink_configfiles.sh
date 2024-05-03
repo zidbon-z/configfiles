@@ -185,6 +185,19 @@ then
     fi
   fi
  
+  # Symlink zshrc
+  if [ -f "$HOME/.config/configfiles/arch-bspwm/zsh/.zshrc" ]
+  then
+    if [ -f "$HOME/.zshrc" ]
+    then
+      rm -rf "$HOME/.zshrc"
+      ln -s $HOME/.config/configfiles/arch-bspwm/zsh/.zshrc $HOME/.zshrc
+    else
+      ln -s $HOME/.config/configfiles/arch-bspwm/zsh/.zshrc $HOME/.zshrc
+    fi
+  fi
+ 
+ 
  
  
  
