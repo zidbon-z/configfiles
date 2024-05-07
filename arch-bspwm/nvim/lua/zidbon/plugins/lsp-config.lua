@@ -16,6 +16,7 @@ return {
 					"black",
 					"pylint",
 					"eslint_d",
+					"bashls",
 				},
 			})
 		end,
@@ -31,6 +32,7 @@ return {
 					"emmet_ls",
 					"cssls",
 					"tailwindcss",
+					"bashls",
 				},
 			})
 		end,
