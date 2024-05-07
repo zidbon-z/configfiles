@@ -197,6 +197,17 @@ then
     fi
   fi
  
+  # Symlink Powerlevel10k
+  if [ -f "$HOME/.config/configfiles/arch-bspwm/zsh/.p10k.zsh" ]
+  then
+    if [ -f "$HOME/.p10k.zsh" ]
+    then
+      rm -rf "$HOME/.p10k.zsh"
+      ln -s $HOME/.config/configfiles/arch-bspwm/zsh/.p10k.zsh $HOME/.p10k.zsh
+    else
+      ln -s $HOME/.config/configfiles/arch-bspwm/zsh/.p10k.zsh $HOME/.p10k.zsh
+    fi
+  fi
  
  
  

@@ -31,7 +31,7 @@ vim.opt.scrolloff = 8
 -- Colors
 vim.g.termguicolors = true
 --vim.cmd("colorscheme evergarden")
-vim.cmd("colorscheme elflord")
+vim.cmd("colorscheme evergarden")
 vim.opt.background = "dark" -- colorschemes that can be light or dark will be dark
 vim.cmd("highlight Normal guibg=none") -- makes background transparent
 
