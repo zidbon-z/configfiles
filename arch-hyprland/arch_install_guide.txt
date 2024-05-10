@@ -1,0 +1,125 @@
+This a guide to configure your system for bspwm after a basic arch installation.
+
+# First install some programs
+sudo pacman -S xorg xorg-xinit bspwm sxhkd nitrogen kitty xterm alsa-utils udiskie thunar git dmenu ntfs-3g pulseaudio-alsa lxappearance qt5ct breeze-gtk deepin-gtk-theme picom unclutter ncdu firefox os-prober openssh nvidia-settings virtualbox newsboat vlc mpv youtube-dl calcurse w3m python-pillow irssi figlet bpytop flameshot 
+
+# Next clone config files
+cd ~/.config
+git clone https://github.com/zidbon-z/configfiles
+
+# Copy config files to their respective directories(eventually sym-link them from the configfiles directory) 
+
+# Set up dual monitors
+Run xrandr to find out what the monitors are called
+Go to the bspwmrc file and make sure the monitors are labled correctly
+Set up a 10-monitor.conf file in the /etc/X11/xorg.conf.d/ directory (copy from backup)
+
+# Update grub
+(for uefi)
+sudo grub-install --target=x86_64-efi --efi-directory=/boot/EFI --bootloader-id=GRUB
+(for non-uefi)
+sudo grub-install --target=i386-pc /dev/sdx
+Then run:
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+After the first time running the above commands, the update commands are:
+update-grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+#Eliminate screen tearing
+Add the picom config folder containing picom.conf to the ~/.config directory
+Make sure that vsync is enabled
+If that doesn't work try:
+For Nvidia
+Use nvidia-xconfig to generate xorg.conf
+Add line:	 
+	Option		"TearFree"	"true"
+If the screen is still tearing research:
+	Set up a 20-nvidia.conf file in the /etc/X11/xorg.conf.d/ directory
+
+For non-Nvidia
+xrandr --output DP-1 --set TearFree on 
+(DP-1 is a placeholder. Use the monitor name. Must be repeated for all monitors.)
+
+# Set firefox to go fullscreen in window
+In the firefox search bar type: about:config
+Change the "full-screen-api.ignore-widgets" to true
+
+# Stop screen from going to sleep
+xset -dpms
+xset s off
+
+# SSH generation and adding key to github
+openssh should be installed but if not:
+sudo pacman -S openssh
+From your home folder enter:
+ssh-keygen
+Copy the id_rsa.pub key to the ssh keys at github.com
+In each folder on your machine that is connected to a git repo, enter:
+git remote set-url origin git@github.com:[username]/[reponame]
+
+# Install yay
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+# Install yay applications
+yay -S
+tdrop-git
+picom-git
+
+##################################################################################################
+# Install spotify
+##################################################################################################
+
+So you have just to edit the PKGBUILD or download here https://www.swisstransfer.com/d/ec410e80-9ba3-4e6a-a7d3-543bad428948
+
+Change commit number, line 9
+
+before edit :
+
+_commit=gc5f8b819
+
+after edit :
+
+_commit=gc5f8b819-2
+
+And change the third shasum512, line 36
+
+before
+
+3cc25f28ae791ac26607117a5df668f803ed8e58f0ace085010a6242fdde97766bdc1c752560850795c9b4324f3e019937fe9af2788a1946ebb70ee781f50d99
+
+after
+
+9ba6c2d155f683b9a38222d58a2a53a2a5f4b422ed1c0d603af87919ba8a68309aea3354278fd1d5d8142a1568d93b7e83b14c041e749b0c39f3bc155a633ef8
+
+Example with yay :
+
+yay -G spotify (download PKGBUILD file)
+
+cd spotify (open spotify install folder)
+
+vim PKGBUILD (edit the PKGBUILD file with previous changes if not downloaded)
+
+makepkg -si (make package and install spotify)
+
+cd .. (back to the previous folder)
+
+rm -fr spotify (remove spotify install folder because you do not need it anymore)
+
+##################################################################################################
+
+# Spacevim
+curl -sLf https://spacevim.org/install.sh | bash
+
+# MuttWizard for email
+
+# Newsboat for youtube and rss feeds
+
+# Vimwiki
+In your home directory enter the command:
+  git clone git@github.com:zidbon-z/vimwiki
+
+Make sure that you don't already have a vimwiki directory in your home directory.
+

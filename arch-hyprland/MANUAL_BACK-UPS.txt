@@ -1,0 +1,4 @@
+# Files to copy to external storage for backup before reinstall
+
+/usr/share/themes/
+~/Pictures
