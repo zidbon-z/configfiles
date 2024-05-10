@@ -1,6 +1,8 @@
 #! /bin/sh
 
 sudo pacman -Syy
+sudo pacman -S reflector
+sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist
 sudo pacman -Syu
 mkdir /tmp/yay
 cd /tmp/yay
