@@ -11,4 +11,4 @@ makepkg -si
 cd
 rm -rf /tmp/yay
 
-yay -S --noconfirm  ranger neovim kitty alsa-utils udiskie thunar git dmenu ntfs-3g lxappearance qt5ct breeze-gtk deepin-gtk-theme ncdu firefox os-prober openssh  virtualbox newsboat vlc mpv calcurse w3m python-pillow irssi figlet btop neofetch flameshot toilet ncmpcpp mpd mpc hyprland waybar waypaper wofi
+yay -S --noconfirm  ranger neovim kitty alsa-utils udiskie thunar git dmenu ntfs-3g lxappearance qt5ct breeze-gtk deepin-gtk-theme ncdu firefox os-prober openssh  virtualbox newsboat vlc mpv calcurse w3m python-pillow irssi figlet btop neofetch flameshot toilet ncmpcpp mpd mpc hyprland waybar waypaper-git wofi swww wl-clipboard-git
