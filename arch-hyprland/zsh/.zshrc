@@ -130,6 +130,9 @@ alias h='cd $(cat $HOME/hdir.txt | fzf --height=50%)'
 alias ha='pwd >> $HOME/hdir.txt'
 # Delete a directory from the list of directories to cd into
 alias hd="cat -n $HOME/hdir.txt | fzf --height=50% | grep -o "." | head -n 6 | tail -n 1 | xargs -I {} sed -i '{}d' $HOME/hdir.txt"
+
+# Sync storage on PC with storage on external drive
+alias update-storage='rsync -rv --ignore-existing /home/zidbon/storage/ /run/media/zidbon/2TB_Backup/storage/'
 ################################################
 
 
