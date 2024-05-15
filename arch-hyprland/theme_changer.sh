@@ -10,9 +10,12 @@ theme[gruvbox]="gruvbox"
 theme[neon-blue]="neon-blue"
 
 # Show wofi menu to select theme
-choice=$(printf '%s\n' "${!theme[@]}" | wofi --dmenu) &&
+choice=$(printf '%s\n' "${!theme[@]}" | wofi --dmenu)
+wait
 
 
+if [ $choice ]
+then
 # Change wofi theme
 cat $CFG/wofi/colors/$choice > $CFG/wofi/style.css
 
@@ -29,3 +32,6 @@ waypaper --restore
 
 # Change kitty theme
 kitty +kitten themes --reload-in=all $choice
+else
+  exit
+fi

@@ -1,16 +1,15 @@
 window {
   margin: 0px;
-  border: 2px solid #ab8138;
-  color: #ac4142;
+  border: 1px solid #ffffff;
   border-radius: 10px;
-  background-color: rgba(43, 48, 59, 0.8);
+  background-color: #000000;
 }
 
 #input {
   margin: 5px;
   border: none;
-  color: #ac4142;
-  background-color: #ab8138;
+  color: #f8f8f2;
+  background-color: #000000;
   font-weight: bold;
 }
 
@@ -18,13 +17,13 @@ window {
   margin: 10px;
   border: none;
   border-radius: 10px;
-  background-color: transparent;
+  background-color: #000000;
 }
 
 #outer-box {
   margin: 5px;
   border: none;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #000000;
 }
 
 #scroll {
@@ -35,11 +34,11 @@ window {
 #text {
   margin: 5px;
   border: none;
-  color: #ab8138;
+  color: #f8f8f2;
 }
 
 #entry.activatable #text {
-  color: #ab8138;
+  color: #282a36;
 }
 
 #entry > * {
@@ -47,11 +46,11 @@ window {
 }
 
 #entry:selected {
-  background-color: #7e8d50;
+  background-color: #64727d;
   border-radius: 10px;
 }
 
 #entry:selected #text {
   font-weight: bold;
-  color: #ac4142;
+  color: #000000;
 }
