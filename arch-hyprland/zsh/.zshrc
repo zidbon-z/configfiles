@@ -72,7 +72,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Would you like to use another custom folder than $ZSH/custom?
 #ZSH_CUSTOM=$HOME/.config/configfiles/arch-bspwm/zsh/custom/
-source $HOME/.config/configfiles/arch-bspwm/zsh/custom/*
+#source $HOME/.config/configfiles/arch-bspwm/zsh/custom/*
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/

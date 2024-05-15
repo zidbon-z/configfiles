@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-  background-color: rgba(43, 48, 59, 0);
+  background-color: rgba(43, 48, 59, 0.8);
   color: #ffffff;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -41,12 +41,6 @@ button {
   border-radius: 0;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-  background: inherit;
-  box-shadow: inset 0 -3px #ffffff;
-}
-
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
   background-color: #a37800;
@@ -54,16 +48,18 @@ button:hover {
 
 #workspaces button {
   padding: 0 5px;
-  background-color: transparent;
-  color: #ffffff;
+  background-color: #7e8d50;
+  color: #4a391c;
+  border-radius: 10;
+  margin: 5px 5px;
 }
 
 #workspaces button:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: #6c99ba;
 }
 
 #workspaces button.active {
-  box-shadow: inset 0 -3px #64727d;
+  background-color: #a37800;
 }
 
 #workspaces button.urgent {
@@ -93,10 +89,20 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
   padding: 0 20px;
-  color: #ffffff;
-  background-color: transparent;
+  color: #4a391c;
+  background-color: #ab8138;
+  border: none;
   border-radius: 10px;
-  margin: 5px;
+  margin: 5px 5px;
+}
+#pulseaudio {
+  background-color: #ac4142;
+}
+#memory {
+  background-color: #6c99ba;
+}
+#cpu {
+  background-color: #7e8d50;
 }
 
 #window,
