@@ -131,6 +131,19 @@ then
     fi
   fi
  
+  # Symlink wofi
+  if [ -d "$HOME/.config/configfiles/arch-hyprland/wofi" ]
+  then
+    if [ -d "$HOME/.config/wofi" ]
+    then
+      rm -rf "$HOME/.config/wofi"
+      ln -s $HOME/.config/configfiles/arch-hyprland/wofi $HOME/.config/wofi
+    else
+      ln -s $HOME/.config/configfiles/arch-hyprland/wofi $HOME/.config/wofi
+    fi
+  fi
+ 
+ 
  
  
  
