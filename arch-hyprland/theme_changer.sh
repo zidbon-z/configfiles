@@ -8,6 +8,7 @@ declare -A theme
 theme[black]="black"
 theme[gruvbox]="gruvbox"
 theme[neon-blue]="neon-blue"
+theme[fallout]="fallout"
 
 # Show wofi menu to select theme
 choice=$(printf '%s\n' "${!theme[@]}" | wofi --dmenu)
