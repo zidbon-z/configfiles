@@ -93,10 +93,10 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-  padding: 0 20px;
-  color: #18d91e;
-  background-color: transparent;
-  border: 2px solid #18d91e;
+  padding: 3px 20px;
+  color: #32a852;
+  background-color: rgba(5, 51, 17, 0.8);
+  border: 1px solid #32a852;
   border-radius: 10px;
   margin: 5px;
 }

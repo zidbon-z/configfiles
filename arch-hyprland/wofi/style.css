@@ -1,14 +1,14 @@
 window {
   margin: 0px;
-  border: 2px solid #18d91e;
+  border: 2px solid #32a852;
   border-radius: 10px;
   background-color: rgba(5, 51, 17, 0.8);
 }
 
 #input {
   margin: 5px;
-  border: 1px solid #18d91e;
-  color: #18d91e;
+  border: 1px solid #32a852;
+  color: #32a852;
   background-color: transparent;
   font-weight: bold;
 }
@@ -34,11 +34,11 @@ window {
 #text {
   margin: 5px;
   border: none;
-  color: #18d91e;
+  color: #32a852;
 }
 
 #entry.activatable #text {
-  color: #18d91e;
+  color: #32a852;
 }
 
 #entry > * {
@@ -46,7 +46,7 @@ window {
 }
 
 #entry:selected {
-  background-color: #18d91e;
+  background-color: #32a852;
   border-radius: 10px;
 }
 
