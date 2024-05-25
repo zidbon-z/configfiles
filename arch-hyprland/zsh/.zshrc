@@ -128,6 +128,7 @@ alias x=exit
 alias ca=calcurse
 alias nb=newsboat
 alias nv=nvim
+alias newtheme='bash $HOME/.config/configfiles/arch-hyprland/Theme_Changer/create_theme.sh'
 
 # Harpoon for directories
 # Open menu to select directory to cd into
