@@ -2,3 +2,4 @@ black
 fallout
 gruvbox
 neon-blue
+tokyo

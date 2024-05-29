@@ -33,7 +33,7 @@ then
     # Create file for kitty
     cat $CFG/kitty/current-theme.conf > $CFG/kitty/themes/$var1.conf
     # Add entry to theme_changer.sh 
-    sed -i "/declare/atheme\[$var1\]\=\"$var1\" " $TCD/theme_changer.bak
+    sed -i "/declare/atheme\[$var1\]\=\"$var1\" " $TCD/theme_changer.sh
     echo "New theme created"
   fi
 else
