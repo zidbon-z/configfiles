@@ -1353,6 +1353,6 @@ map kitty_mod+delete clear_terminal reset active
 
 
 # BEGIN_KITTY_THEME
-# Black
+# Neon-Blue
 include current-theme.conf
 # END_KITTY_THEME

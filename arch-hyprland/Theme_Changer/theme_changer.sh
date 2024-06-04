@@ -5,6 +5,7 @@ CFG="$HOME/.config/configfiles/arch-hyprland"
 
 # Create theme array
 declare -A theme
+theme[coffee]="coffee" 
 theme[black]="black"
 theme[gruvbox]="gruvbox"
 theme[neon-blue]="neon-blue"
