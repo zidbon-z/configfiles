@@ -2,7 +2,6 @@
 --vim.keymap.set("n", "<leader>fv", vim.cmd.Ex)
 vim.keymap.set("n", "-", vim.cmd.Ex)
 
-
 -- Select All
 vim.keymap.set("n", "==", [[ggVG]])
 
@@ -12,3 +11,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Clear hightlights
 vim.keymap.set("n", "<leader>nh", ":noh<CR>")
+
+-- Open Obsidian
+vim.keymap.set("n", "<leader>oo", ":e ~/Documents/VAULT-TEC/Mother Brain/Mother Brain.md<CR>")
