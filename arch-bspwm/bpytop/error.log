@@ -244,3 +244,15 @@ Traceback (most recent call last):
     for f in os.listdir(d):
              ^^^^^^^^^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: '/home/zidbon/.config/bpytop/themes'
+06/05/25 (17:33:03) | ERROR: [Errno 2] No such file or directory: '/home/zidbon/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 1357, in refresh
+    for f in os.listdir(d):
+             ~~~~~~~~~~^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zidbon/.config/bpytop/themes'
+07/05/25 (16:04:49) | ERROR: [Errno 2] No such file or directory: '/home/zidbon/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 1357, in refresh
+    for f in os.listdir(d):
+             ~~~~~~~~~~^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zidbon/.config/bpytop/themes'
